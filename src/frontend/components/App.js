@@ -12,6 +12,7 @@ import { useState } from "react";
 import { ethers } from "ethers";
 import { Spinner } from "react-bootstrap";
 import NewHome from "../pages/newHome.js";
+import Creater from "../pages/creater.js";
 
 import "./App.css";
 
@@ -81,7 +82,7 @@ function App() {
               />
               <Route
                 path="/create"
-                element={<Create marketplace={marketplace} nft={nft} />}
+                element={<Creater marketplace={marketplace} nft={nft} />}
               />
               <Route
                 path="/my-listed-items"
