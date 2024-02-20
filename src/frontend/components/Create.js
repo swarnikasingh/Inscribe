@@ -2,9 +2,12 @@ import { useState } from 'react'
 import { ethers } from "ethers"
 import { Row, Form, Button } from 'react-bootstrap'
 import { create as ipfsHttpClient } from 'ipfs-http-client'
-const client = ipfsHttpClient('https://ipfs.infura.io:5001/api/v0')
+// import express from 'express';
+const lighthouse = require('@lighthouse-web3/sdk')
+const apiKey = "93729a22.916d881056194843a3bbd571edf8a55b";
 
 const Create = ({ marketplace, nft }) => {
+  
   const [image, setImage] = useState('')
   const [price, setPrice] = useState(null)
   const [name, setName] = useState('')
@@ -12,27 +15,34 @@ const Create = ({ marketplace, nft }) => {
   const uploadToIPFS = async (event) => {
     event.preventDefault()
     const file = event.target.files[0]
+    console.log(file.name);
     if (typeof file !== 'undefined') {
       try {
-        const result = await client.add(file)
+        const result = await lighthouse.uploadBuffer(file, apiKey)
         console.log(result)
-        setImage(`https://ipfs.infura.io/ipfs/${result.path}`)
+        setImage("https://gateway.lighthouse.storage/ipfs/"+result.data.Hash)
       } catch (error){
         console.log("ipfs image upload error: ", error)
       }
     }
   }
+  // const ipfs = ipfsHttpClient({
+  //   url: "https://ipfs.infura.io:5001/api/v0",
+  //   headers: {
+  //     authorization,
+  //   },
+  // });
   const createNFT = async () => {
     if (!image || !price || !name || !description) return
     try{
-      const result = await client.add(JSON.stringify({image, price, name, description}))
+      const result = await lighthouse.upload(JSON.stringify({image, price, name, description}), apiKey)
       mintThenList(result)
     } catch(error) {
       console.log("ipfs uri upload error: ", error)
     }
   }
   const mintThenList = async (result) => {
-    const uri = `https://ipfs.infura.io/ipfs/${result.path}`
+    const uri = `https://ipfs.io/ipfs/${result.path}`
     // mint nft 
     await(await nft.mint(uri)).wait()
     // get tokenId of new nft 
