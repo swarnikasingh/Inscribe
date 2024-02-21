@@ -1,9 +1,17 @@
 import React from "react";
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
     <div className="bg-gray-200">
+=======
+import Create from "./Create";
+
+const Hero = () => {
+  return (
+    <div>
+>>>>>>> df3666e587ab5337be4b9fb290ac1fc36a9fffab
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
@@ -25,11 +33,20 @@ const Hero = () => {
               quality resources globally.
             </p>
 
+<<<<<<< HEAD
             <Link to="/create">
               <button className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400">
                 Get Started Today
               </button>
             </Link>
+=======
+            <button
+              onClick={Create}
+              className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+            >
+              Get Started Today
+            </button>
+>>>>>>> df3666e587ab5337be4b9fb290ac1fc36a9fffab
           </div>
         </div>
       </div>

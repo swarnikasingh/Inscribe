@@ -57,7 +57,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="App bg-gray-200 max-h-full">
         <>
           <Navigation web3Handler={web3Handler} account={account} />
         </>
@@ -82,7 +82,11 @@ function App() {
               />
               <Route
                 path="/create"
+<<<<<<< HEAD
                 element={<Create marketplace={marketplace} nft={nft} />}
+=======
+                element={<Creater marketplace={marketplace} nft={nft} />}
+>>>>>>> df3666e587ab5337be4b9fb290ac1fc36a9fffab
               />
               <Route
                 path="/my-listed-items"

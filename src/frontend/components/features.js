@@ -1,5 +1,8 @@
 import React from "react";
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
+=======
+>>>>>>> df3666e587ab5337be4b9fb290ac1fc36a9fffab
 
 const Features = () => {
   return (
@@ -27,11 +30,17 @@ const Features = () => {
                 </div>
               </div>
               <div className="px-1 py-4">
+<<<<<<< HEAD
                 <Link to="/">
                   <a href="#" className="text-blue-500 hover:underline">
                     View my Listed NFTs
                   </a>
                 </Link>
+=======
+                <a href="#" className="text-blue-500 hover:underline">
+                  Read More
+                </a>
+>>>>>>> df3666e587ab5337be4b9fb290ac1fc36a9fffab
               </div>
             </div>
             <div className="bg-white rounded-lg border p-4">
@@ -55,11 +64,17 @@ const Features = () => {
                 </div>
               </div>
               <div className="px-1 py-4">
+<<<<<<< HEAD
                 <Link to="/">
                   <a href="#" className="text-blue-500 hover:underline">
                     View my Listed NFTs
                   </a>
                 </Link>
+=======
+                <a href="#" className="text-blue-500 hover:underline">
+                  Read More
+                </a>
+>>>>>>> df3666e587ab5337be4b9fb290ac1fc36a9fffab
               </div>
             </div>
             <div className="bg-white rounded-lg border p-4">
@@ -76,11 +91,17 @@ const Features = () => {
                 <p className="text-gray-700 text-3xl">&lt; 0.01 ETH</p>
               </div>
               <div className="px-1 py-4">
+<<<<<<< HEAD
                 <Link to="/">
                   <a href="#" className="text-blue-500 hover:underline">
                     View my Listed NFTs
                   </a>
                 </Link>
+=======
+                <a href="#" className="text-blue-500 hover:underline">
+                  Read More
+                </a>
+>>>>>>> df3666e587ab5337be4b9fb290ac1fc36a9fffab
               </div>
             </div>
             <div className="bg-white rounded-lg border p-4">
@@ -95,11 +116,17 @@ const Features = () => {
                 <p className="text-gray-700 text-3xl">&lt; 0.01 ETH</p>
               </div>
               <div className="px-1 py-4">
+<<<<<<< HEAD
                 <Link to="/">
                   <a href="#" className="text-blue-500 hover:underline">
                     View my Listed NFTs
                   </a>
                 </Link>
+=======
+                <a href="#" className="text-blue-500 hover:underline">
+                  Read More
+                </a>
+>>>>>>> df3666e587ab5337be4b9fb290ac1fc36a9fffab
               </div>
             </div>
           </div>
