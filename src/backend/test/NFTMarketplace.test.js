@@ -14,7 +14,7 @@ describe("NFTMarketplace", function () {
   let addr2;
   let addrs;
   let feePercent = 1;
-  let URI = "sample URI"
+  let URI = "https://nftstorage.link/ipfs/bafybeigfzrjgzi6jr5eqvenldcgtizf3xiri33p53x6pftgtjc3am5rzpi"
 
   beforeEach(async function () {
     // Get the ContractFactories and Signers here.
