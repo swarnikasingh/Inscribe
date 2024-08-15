@@ -8,6 +8,8 @@
 - [Hardhat](https://hardhat.org/) (Development Framework)
 - [Ipfs](https://ipfs.io/) (Metadata storage)
 - [React routers](https://v5.reactrouter.com/) (Navigational components)
+- React
+  
 
 ## Requirements For Initial Setup
 - Install [NodeJS](https://nodejs.org/en/), should work with any node version below 16.5.0
