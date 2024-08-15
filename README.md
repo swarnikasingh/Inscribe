@@ -1,4 +1,5 @@
-# EduNFT
+# Inscribe
+
 
 ## Technology Stack & Tools
 
